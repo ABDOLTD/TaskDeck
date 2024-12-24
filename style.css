@@ -1,0 +1,139 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    height: 100%;
+    background-color: #343a40;
+    padding: 15px;
+    color: #fff;
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.sidebar .nav-link {
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebar .nav-link.active {
+    background-color: #007bff;
+    font-weight: bold;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
+
+/* Main Content Styling */
+.main-content {
+    padding: 20px;
+}
+
+#monthTitle {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Task Cards */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card.completed {
+    background-color: #d1e7dd; /* Light green background for completed tasks */
+    color: #0f5132; /* Dark green text */
+}
+
+.card.pending {
+    background-color: #fff3cd; /* Light yellow background for pending tasks */
+    color: #664d03; /* Dark yellow text */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    color: #6c757d;
+}
+
+.card button {
+    border-radius: 5px;
+}
+
+.card button.btn-danger {
+    background-color: #dc3545; /* Red for delete button */
+    color: #fff;
+    border: none;
+}
+
+.card button.btn-danger:hover {
+    background-color: #b02a37; /* Darker red on hover */
+}
+
+.card button.btn-success {
+    background-color: #198754; /* Green for mark completed */
+    color: #fff;
+    border: none;
+}
+
+.card button.btn-success:hover {
+    background-color: #157347; /* Darker green on hover */
+}
+
+.card button.btn-warning {
+    background-color: #ffc107; /* Yellow for mark pending */
+    color: #212529;
+    border: none;
+}
+
+.card button.btn-warning:hover {
+    background-color: #e0a800; /* Darker yellow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    #taskList .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
