@@ -12,6 +12,7 @@ body {
     background-color: #343a40;
     padding: 15px;
     color: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .sidebar h2 {
@@ -19,6 +20,13 @@ body {
     border-bottom: 2px solid #fff;
     padding-bottom: 10px;
     text-align: center;
+}
+
+.sidebar h2 img {
+    display: block;
+    margin: 0 auto 10px;
+    width: 60px; /* Adjust size as needed */
+    height: auto;
 }
 
 .sidebar .nav-link {
@@ -72,68 +80,25 @@ body {
     color: #664d03; /* Dark yellow text */
 }
 
-.card-body {
-    padding: 20px;
-}
-
-.card-title {
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-.card-text {
+/* Footer Styling */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #343a40;
+    color: white;
+    padding: 15px 0; /* Increased padding for better spacing */
     font-size: 0.9rem;
-    margin-bottom: 15px;
-    color: #6c757d;
 }
 
-.card button {
-    border-radius: 5px;
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+    font-size: 1.2rem; /* Increase icon size for better visibility */
 }
 
-.card button.btn-danger {
-    background-color: #dc3545; /* Red for delete button */
-    color: #fff;
-    border: none;
-}
-
-.card button.btn-danger:hover {
-    background-color: #b02a37; /* Darker red on hover */
-}
-
-.card button.btn-success {
-    background-color: #198754; /* Green for mark completed */
-    color: #fff;
-    border: none;
-}
-
-.card button.btn-success:hover {
-    background-color: #157347; /* Darker green on hover */
-}
-
-.card button.btn-warning {
-    background-color: #ffc107; /* Yellow for mark pending */
-    color: #212529;
-    border: none;
-}
-
-.card button.btn-warning:hover {
-    background-color: #e0a800; /* Darker yellow on hover */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .sidebar {
-        display: none;
-    }
-
-    .main-content {
-        padding: 10px;
-    }
-
-    #taskList .col-md-4 {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
+footer a:hover {
+    color: #007bff;
 }
